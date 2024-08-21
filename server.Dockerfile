@@ -59,6 +59,7 @@ COPY  ./temporal/schema /etc/temporal/schema
 COPY ./docker/entrypoint.sh /etc/temporal/entrypoint.sh
 COPY ./docker/start-temporal.sh /etc/temporal/start-temporal.sh
 COPY ./docker/auto-setup.sh /etc/temporal/auto-setup.sh
+COPY ./docker/setup-develop.sh /etc/temporal/setup-develop.sh
 
 ENTRYPOINT ["/etc/temporal/entrypoint.sh"]
 CMD ["autosetup"]
